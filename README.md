@@ -26,38 +26,39 @@ Para criar:
 ```mermaid
 classDiagram
     class ReprodutorMusical {
-        +void tocar()
-        +void pausar()
-        +void selecionarMusica(String musica)
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
     }
 
     class AparelhoTelefonico {
-        +void ligar(String numero)
-        +void atender()
-        +void iniciarCorreioVoz()
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
     }
 
     class NavegadorInternet {
-        +void exibirPagina(String url)
-        +void adicionarNovaAba()
-        +void atualizarPagina()
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
     }
 
     class IPhone {
-        +void tocar()
-        +void pausar()
-        +void selecionarMusica(String musica)
-        +void ligar(String numero)
-        +void atender()
-        +void iniciarCorreioVoz()
-        +void exibirPagina(String url)
-        +void adicionarNovaAba()
-        +void atualizarPagina()
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
     }
 
-    IPhone implements ReprodutorMusical
-    IPhone implements AparelhoTelefonico
-    IPhone implements NavegadorInternet
+    IPhone ..|> ReprodutorMusical
+    IPhone ..|> AparelhoTelefonico
+    IPhone ..|> NavegadorInternet
+
 
 
 ---
