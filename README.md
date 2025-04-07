@@ -21,6 +21,43 @@ Para criar:
 
 ---
 
+## 📊 Diagrama UML (Mermaid)
+
+```mermaid
+classDiagram
+    class ReprodutorMusical {
+        +void tocar()
+        +void pausar()
+        +void selecionarMusica(String musica)
+    }
+
+    class AparelhoTelefonico {
+        +void ligar(String numero)
+        +void atender()
+        +void iniciarCorreioVoz()
+    }
+
+    class NavegadorInternet {
+        +void exibirPagina(String url)
+        +void adicionarNovaAba()
+        +void atualizarPagina()
+    }
+
+    class IPhone {
+        +void tocar()
+        +void pausar()
+        +void selecionarMusica(String musica)
+        +void ligar(String numero)
+        +void atender()
+        +void iniciarCorreioVoz()
+        +void exibirPagina(String url)
+        +void adicionarNovaAba()
+        +void atualizarPagina()
+    }
+
+    IPhone implements ReprodutorMusical
+    IPhone implements AparelhoTelefonico
+    IPhone implements NavegadorInternet
 
 
 ---
