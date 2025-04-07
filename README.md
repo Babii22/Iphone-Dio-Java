@@ -60,7 +60,6 @@ classDiagram
     IPhone ..|> NavegadorInternet
 
 
-
 ---
 
 👩‍💻 Desenvolvido por
